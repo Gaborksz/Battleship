@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="./style.css">    
+
+    <title>Battleship</title>
+</head>
+
+
+<body>
+
+    <header>
+        <section id="Header-Section">
+
+            <div id="Title-Container">
+                <h1>Battleship<sup>2022</sup></h1>
+            </div>            
+        </section>
+        
+
+        <section id="Stats-Section">
+
+            <div class="Stat-Container">
+                <h2>Number of shots:</h2><span id="numberOfShotsDisplay">0</span>
+            </div>
+
+            <div class="Stat-Container">
+                <h2>Number of Hits:</h2><span id="numberOfHitsDisplay">0</span>
+            </div>                        
+
+            <div class="Button-Container">
+                <button id="Start-Game-Btn">Start Game</button>            
+            </div>
+        </section>
+
+    
+    </header>
+
+
+    <section id="Battlefield">
+    </section>
+
+
+    <section id="Game-Menu-Cover" class="hidden">      
+        <div id="Menu-Display">
+            <h2>Please choose the grid size:</h2>
+            <div>
+                <label for="gridSize">Grid size</label>
+                <select name="gridSize" id="gridSizeInput">
+                    <option value="5">5</option>
+                    <option value="6">6</option>
+                    <option value="7">7</option>
+                    <option value="8">8</option>
+                    <option value="9">9</option>
+                    <option value="10">10</option>
+                    <option value="11">11</option>
+                    <option value="12">12</option>
+                    <option value="13">13</option>
+                    <option value="14">14</option>
+                </select>
+                <button id="Lets-Play-Btn">Let's play</button>                
+            </div>
+        </div>         
+    </section>
+
+
+
+    <section id="Notification-Display-Cover" class="hidden">
+        <div id="Notification-Display" >
+            <h1>Well done! You have hit the ship</h1>
+            <button>OK</button>
+        </div>
+    </section>
+
+
+    <script type="module" src="./battleShip.js"></script>
+    <script src="https://kit.fontawesome.com/a0c0d540f7.js" crossorigin="anonymous"></script>
+</body>
+</html>

@@ -1,0 +1,196 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik+Glitch&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Patrick+Hand&display=swap');
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    border-radius: 4px;
+}
+
+
+body {
+    margin: 0px 10px;
+    background-image: url(./Assets/Backgrounds/2560px-French_battleship_Richelieu_underway_in_the_Atlantic_Ocean_on_26_August_1943_\(80-G-78789\).jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+
+
+/* -------------------------------------HEADER SECTION ------------------------------------- */
+
+#Header-Section {
+    margin: 20px 0px;
+    min-width: 550px;
+}
+
+
+#Title-Container {  
+    text-align: center;
+    font-family: 'Rubik Glitch', cursive;
+    font-size: 50px;
+    font-weight: 400; 
+}
+
+
+#Title-Container sup {
+    position: relative;
+    top: -10px;
+    left: 10px;
+    font-size: 20px;    
+}
+
+
+
+
+
+
+span {
+    margin: auto 10px;
+    font-size: 30px;
+    width: 30px;
+    text-align: center;
+}
+
+
+button {   
+   height: 40px;
+   width: 150px;
+}
+
+
+#Stats-Section {    
+    min-width: 550px;    
+    display: flex;
+    justify-content: center;
+    font-family: 'Patrick Hand', cursive;        
+}
+
+.Stat-Container {
+    display: flex;
+    align-items: center;
+    margin: 0px 20px;
+    background-color: rgba(2, 2, 2, 0.3)    
+}
+
+
+.Stat-Container h2 {
+    margin-left: 10px;
+}
+
+
+
+
+
+
+
+
+/* -------------------------------------BATTLEFIELD SECTION ------------------------------------- */
+
+
+#Battlefield {
+    display: grid;
+    gap: 0.2rem;
+    grid-template-columns: repeat(4, 1fr); 
+    height: 35vw;
+    max-width: 50%;
+    min-width: 600px;
+    margin: 20px auto;      
+}
+
+
+.field {
+    background-color: rgba(0, 0, 0, 0.5);
+    text-align: center;
+    color: rgb(158, 154, 154);  
+}
+
+
+.unShot:hover {      
+    background-image: url(./Assets/Capture.PNG);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    opacity: 0.5;
+    border-radius: 20%;
+}
+
+.shot {
+    background-color: red;
+    opacity: 0.4;
+}
+
+
+.hit {
+
+}
+
+/* -------------------------------------HIDDEN MENU SECTION ------------------------------------- */
+
+
+.hidden {
+    display: none;
+}
+
+[id$="Cover"] {
+    position: absolute;    
+    width: 99vw;
+    height: 95vh;
+    top: 0;
+}
+
+
+#Menu-Display {
+    margin-top: 120px;
+    padding: 30px;
+    height: 200px;
+    background-color: rgb(255, 253, 136);
+    font-family: 'Patrick Hand', cursive;  
+}
+
+
+#Menu-Display h2 {
+    text-align: center;
+}
+
+
+#Menu-Display div {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+
+#Menu-Display label {
+    margin: 0 10px;
+    font-size: 20px;
+}
+
+
+#Menu-Display select {
+    margin: 0 10px;
+    font-size: 20px;
+}
+
+
+
+
+
+@media (max-width: 560px) {
+    #Battlefield {
+        width: 100%;
+    }
+}
+
+
+
+
+
+
+
+
+
+/* -------------------------------------HIDDEN NOTIFICATION SECTION ------------------------------------- */
